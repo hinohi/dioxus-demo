@@ -7,3 +7,22 @@ edition = "2021"
 
 [dependencies]
 dioxus = { version = "0.1.8", features = ["web"] }
+wasm-bindgen = { version = "0.2.79", features = ["serde-serialize"]  }
+wasm-logger = "0.2.0"
+log = "0.4.14"
+console_error_panic_hook = "*"
+im-rc = "15.0.0"
+wasm-bindgen-futures = "0.4.29"
+serde = { version = "1.0.80", features = ["derive"] }
+serde_derive = "^1.0.59"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+    'Headers',
+    'Request',
+    'RequestInit',
+    'RequestMode',
+    'Response',
+    'Window'
+]
